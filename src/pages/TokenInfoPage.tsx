@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 import { motion } from "framer-motion";
 import { Shield, Users, BarChart3, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,9 +24,7 @@ const TokenInfoPage = () => {
       <nav className="border-b border-border/50 px-6 py-4">
         <div className="container mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-primary/20 flex items-center justify-center">
-              <span className="text-gradient font-bold text-sm">DS</span>
-            </div>
+            <img src={logo} alt="DEX Screener" className="h-8 w-8 rounded-lg" />
             <span className="font-semibold text-foreground">DEX Screener</span>
             <span className="text-muted-foreground text-sm">Marketplace</span>
           </Link>
