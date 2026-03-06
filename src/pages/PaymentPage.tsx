@@ -71,7 +71,7 @@ const PaymentPage = () => {
         </motion.div>
 
         {/* Chain selection */}
-        <div className="grid grid-cols-3 gap-4 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
           {chains.map((chain) => (
             <motion.button
               key={chain.id}

@@ -58,6 +58,22 @@
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  img, svg, video, canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  a, p, code {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
 }
 
 @layer utilities {
