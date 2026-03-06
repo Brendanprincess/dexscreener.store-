@@ -148,10 +148,10 @@ const PaymentPage = () => {
 
         <div className="mt-12 glass rounded-xl p-6 max-w-md mx-auto space-y-3">
           <p className="text-muted-foreground text-sm">
-            💬 Need help? <a href="https://t.me/YourSupportBot" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Contact Support on Telegram</a>
+            💬 Need help? <a href="https://t.me/DexMarketPlaceSupport" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Contact Support on Telegram</a>
           </p>
           <p className="text-muted-foreground text-sm">
-            🤖 Prefer to pay via Telegram? <a href="https://t.me/YourPaymentBot" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Use our Telegram Bot</a>
+            🤖 Prefer to pay via Telegram? <a href="https://t.me/DEXScreener_MarketplaceBot" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Use our Telegram Bot</a>
           </p>
         </div>
       </div>
