@@ -13,7 +13,7 @@ const chains = [
     name: "Ethereum",
     symbol: "ETH",
     icon: "⟠",
-    address: "0x89033a781DCbf67446B895712050087c1FEE4ba4",
+    address: "0xC34fa59084Eadb984c9c095d7b31Bfe92De21d76",
     color: "from-[hsl(220,80%,55%)] to-[hsl(260,80%,60%)]",
   },
   {
@@ -21,7 +21,7 @@ const chains = [
     name: "Solana",
     symbol: "SOL",
     icon: "◎",
-    address: "2sgKv5zUEUakQbW1YSyyjCEVh4up6qiLPiqGHFZjjopn",
+    address: "7mxLcbetSqK3KTAdiAPHdNy5Xd5E4WEdSyYw6mtcXwz4",
     color: "from-[hsl(280,80%,55%)] to-[hsl(170,80%,50%)]",
   },
   {
@@ -29,7 +29,7 @@ const chains = [
     name: "BNB Chain",
     symbol: "BNB",
     icon: "◆",
-    address: "0xDd3e57aC4a34633E83496631e0f5489f72A954b9",
+    address: "0x0bF3149B67c96946eA94D862Ea70EA1F668017cb",
     color: "from-[hsl(40,90%,50%)] to-[hsl(30,90%,45%)]",
   },
 ];
