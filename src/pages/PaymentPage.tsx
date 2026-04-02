@@ -7,13 +7,17 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import logo from "@/assets/logo.png";
 
+type PaymentLocationState = {
+  price?: number;
+};
+
 const chains = [
   {
     id: "eth",
     name: "Ethereum",
     symbol: "ETH",
     icon: "⟠",
-    address: "0xC34fa59084Eadb984c9c095d7b31Bfe92De21d76",
+    address: "0x89033a781DCbf67446B895712050087c1FEE4ba4",
     color: "from-[hsl(220,80%,55%)] to-[hsl(260,80%,60%)]",
   },
   {
@@ -21,7 +25,7 @@ const chains = [
     name: "Solana",
     symbol: "SOL",
     icon: "◎",
-    address: "7mxLcbetSqK3KTAdiAPHdNy5Xd5E4WEdSyYw6mtcXwz4",
+    address: "2sgKv5zUEUakQbW1YSyyjCEVh4up6qiLPiqGHFZjjopn",
     color: "from-[hsl(280,80%,55%)] to-[hsl(170,80%,50%)]",
   },
   {
@@ -29,7 +33,7 @@ const chains = [
     name: "BNB Chain",
     symbol: "BNB",
     icon: "◆",
-    address: "0x0bF3149B67c96946eA94D862Ea70EA1F668017cb",
+    address: "0xDd3e57aC4a34633E83496631e0f5489f72A954b9",
     color: "from-[hsl(40,90%,50%)] to-[hsl(30,90%,45%)]",
   },
 ];
@@ -39,7 +43,7 @@ const PaymentPage = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
   const location = useLocation();
-  const price = (location.state as any)?.price || 269.10;
+  const price = (location.state as PaymentLocationState | null)?.price || 269.10;
 
   const selected = chains.find((c) => c.id === selectedChain);
 

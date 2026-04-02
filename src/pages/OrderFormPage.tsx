@@ -26,7 +26,19 @@ const OrderFormPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Pass order info to payment page
+    const notifyUrl = import.meta.env.VITE_NOTIFY_ORDER_URL as string | undefined;
+
+    if (notifyUrl) {
+      void fetch(notifyUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          order: form,
+          createdAt: new Date().toISOString(),
+          source: "order-form",
+        }),
+      }).catch(() => {});
+    }
     navigate("/payment", { state: { order: form, price: 269.10 } });
   };
 
